@@ -1,232 +1,55 @@
 :root{--orange:#df8755;--orange2:#e99b68;--cream:#fff8ef;--brown:#74362f;--ink:#3f2925;--white:#fff;--shadow:0 14px 35px rgba(77,39,31,.18);--radius:24px}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#f5e6da;color:var(--ink);font-family:Montserrat,system-ui,sans-serif}body{display:flex;justify-content:center}.app-shell{width:100%;min-height:100vh;background:var(--cream);overflow:hidden;position:relative}.screen{min-height:100vh;position:relative;animation:in .35s ease both}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}button{font:inherit;border:0;cursor:pointer}img{display:block;max-width:100%}.paw-bg{background-color:var(--orange);background-image:radial-gradient(circle at 20% 20%,rgba(255,220,194,.18) 0 12px,transparent 13px),radial-gradient(circle at 65% 35%,rgba(255,220,194,.14) 0 10px,transparent 11px),radial-gradient(circle at 30% 75%,rgba(255,220,194,.15) 0 17px,transparent 18px);background-size:100px 100px,140px 130px,180px 170px}.topbar{height:24px;background:var(--orange)}.center{display:flex;align-items:center;justify-content:center}.home{background:#fff8ef;display:flex;align-items:center;justify-content:center;min-height:100vh}.home-card{width:100%;max-width:430px;height:100vh;height:100dvh;background:#fff8ef;box-shadow:none;text-align:center;position:relative;margin:0;overflow:hidden}.home-card img{width:100%;height:100%;object-fit:contain;object-position:center;border:0}.home-card .card-copy{display:none}.name{font-weight:800;letter-spacing:.04em;color:var(--brown);font-size:16px}.subtitle{color:#c8734e;margin-top:4px;font-size:14px}.heart{display:none}.tap{position:absolute;inset:0;background:transparent}.welcome img{width:100%;height:44vh;object-fit:cover;object-position:center top}.welcome-copy{padding:28px 24px 50px;text-align:center;color:white;min-height:56vh}.welcome h1{font-size:21px;line-height:1.1;margin:8px 0 24px;font-weight:800}.welcome p{font-size:15px;line-height:1.6;margin:0 auto;max-width:330px}.thanks{font-family:Nunito,sans-serif;color:var(--brown);font-size:21px;font-weight:800;margin:28px 0}.continue{color:white;font-size:14px;opacity:.95}.menu{background:var(--orange);min-height:100vh;padding-bottom:36px}.menu-hero{height:31vh;min-height:220px;background:url('assets/menu-bg.png') center top/cover no-repeat}.menu-title{color:white;text-align:center;font-size:23px;font-weight:800;padding:18px 24px 8px}.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:14px 18px}.menu-btn{min-height:128px;border-radius:22px;background:rgba(255,248,239,.96);box-shadow:0 7px 18px rgba(84,43,33,.12);padding:14px;color:var(--brown);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-weight:800}.menu-icon{font-size:37px}.menu-btn small{font-size:12px;opacity:.72}.section{min-height:100vh;background:var(--cream)}.section-header{background:var(--orange);color:white;padding:15px 18px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:2}.back{background:rgba(255,255,255,.2);color:white;border-radius:50%;width:40px;height:40px;font-size:22px}.section-header h1{font-size:19px;margin:0}.section-body{padding-bottom:40px}.hero-photo{width:100%;height:39vh;object-fit:cover}.content{padding:22px 20px}.content h2{color:var(--brown);font-size:22px;margin:0 0 12px}.content p{line-height:1.65;font-size:14px;margin:8px 0}.rule{background:white;border-radius:18px;padding:16px;margin:14px 0;box-shadow:0 7px 18px rgba(77,39,31,.08)}.rule strong{color:var(--brown)}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.gallery img{width:100%;height:180px;object-fit:cover;border-radius:18px}.pill{display:inline-flex;padding:8px 12px;border-radius:999px;background:#f4d6c4;color:var(--brown);font-size:12px;font-weight:800;margin:4px 4px 4px 0}.final{min-height:100vh;background:var(--orange);color:white;text-align:center;padding:18vh 28px;display:flex;flex-direction:column;align-items:center}.final .big-heart{font-size:75px;animation:pulse 1.5s infinite}.final h1{font-size:30px;margin:10px 0}.final p{line-height:1.7;max-width:330px}.restart{margin-top:25px;background:white;color:var(--brown);padding:14px 22px;border-radius:999px;font-weight:800}@keyframes pulse{50%{transform:scale(1.1)}}@media(min-width:700px){.app-shell{max-width:430px;box-shadow:0 0 40px rgba(0,0,0,.12)}.screen{min-height:100dvh}.home-card{width:300px}.menu-grid{gap:16px}.menu-btn{min-height:140px}}
 
-/* Couverture Baya : plein écran */
-.home {
-  width: 100%;
-  height: 100vh;
-  height: 100dvh;
-  min-height: 100vh;
-  min-height: 100dvh;
-  margin: 0;
-  padding: 0;
-  background: #fff8ef;
-  overflow: hidden;
-}
+/* Mise en page unifiee : meme largeur sur toutes les pages */
+html, body { width: 100%; margin: 0; }
+body { display: block; background: #f5e6da; }
+#app { width: 100%; max-width: 430px; margin: 0 auto; background: var(--cream); min-height: 100dvh; overflow: hidden; }
+.screen { width: 100%; min-height: 100dvh; }
 
-.home-card {
-  position: relative;
-  width: 100%;
-  max-width: none;
-  height: 100vh;
-  height: 100dvh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: none;
-  border-radius: 0;
-}
+/* Couverture : photo plein cadre */
+.home { width: 100%; height: 100dvh; min-height: 100dvh; padding: 0; margin: 0; overflow: hidden; }
+.home-card { width: 100%; max-width: none; height: 100dvh; margin: 0; border-radius: 0; box-shadow: none; }
+.home-card img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.home-card .card-copy, .home-card .heart { display: none; }
+.home .tap { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 5; }
 
-.home-card img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border: none;
-}
-
-.home-card .card-copy,
-.home-card .heart {
-  display: none;
-}
-
-.home .tap {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-}
-
-
-/* Agrandir l'image de la page de bienvenue */
+/* Page 2 : photo en fond, encart orange compact en bas */
+.screen:has(.welcome) { height: 100dvh; min-height: 100dvh; overflow: hidden; }
+.screen:has(.welcome) .topbar { display: none; }
 .welcome {
-  min-height: 100vh;
-  min-height: 100dvh;
-  position: relative;
-  overflow: hidden;
+  position: relative; display: flex; flex-direction: column;
+  align-items: center; justify-content: flex-end;
+  width: 100%; height: 100dvh; min-height: 100dvh;
+  padding: 16px 18px max(24px, env(safe-area-inset-bottom));
+  overflow: hidden; background: transparent;
 }
-
-.welcome img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.welcome-copy {
-  position: relative;
-  z-index: 1;
-  min-height: 100vh;
-  min-height: 100dvh;
-  padding: 28px 24px 50px;
-  background: transparent;
-}
-
-
-/* CORRECTION FINALE PAGE 2 - STYLE MAQUETTE */
-
-.welcome {
-  position: relative !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-end !important;
-  align-items: center !important;
-  width: 100% !important;
-  height: 100dvh !important;
-  min-height: 100dvh !important;
-  padding: 0 18px 24px !important;
-  overflow: hidden !important;
-  background: transparent !important;
-}
-
-/* Photo plein écran */
 .welcome > img {
-  position: absolute !important;
-  inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  object-fit: cover !important;
-  object-position: center center !important;
-  z-index: 0 !important;
+  position: absolute; inset: 0; display: block;
+  width: 100%; height: 100%; max-width: none;
+  object-fit: cover; object-position: center;
+  z-index: 0;
 }
-
-/* Petit encart orange en bas */
 .welcome .welcome-copy {
-  position: relative !important;
-  z-index: 2 !important;
-  display: block !important;
-  flex: 0 0 auto !important;
-  width: 100% !important;
-  max-width: 380px !important;
-  height: auto !important;
-  min-height: 0 !important;
-  margin: 0 !important;
-  padding: 20px 16px !important;
-  border-radius: 24px !important;
-  background: rgba(223, 135, 85, 0.94) !important;
-  box-shadow: 0 12px 32px rgba(60, 30, 20, 0.25) !important;
-  text-align: center !important;
+  position: relative; z-index: 1; flex: 0 0 auto;
+  width: 100%; max-width: 380px;
+  height: auto; min-height: 0;
+  margin: 0; padding: 18px 16px 20px;
+  border-radius: 24px;
+  background: rgba(223,135,85,.94);
+  box-shadow: 0 12px 32px rgba(60,30,20,.25);
+  text-align: center; color: white;
 }
-
-/* Titre */
-.welcome .welcome-copy h1 {
-  color: white !important;
-  font-size: 17px !important;
-  line-height: 1.25 !important;
-  margin: 0 0 12px !important;
-}
-
-/* Petit texte */
-.welcome .welcome-copy p {
-  color: white !important;
-  font-size: 12px !important;
-  line-height: 1.5 !important;
-  margin: 0 !important;
-}
-
-/* Remerciement */
-.welcome .welcome-copy .thanks {
-  color: white !important;
-  font-size: 16px !important;
-  margin: 14px 0 !important;
-}
-
-/* Bouton BAYA */
+.welcome .welcome-copy h1 { color: white; font-size: 17px; line-height: 1.25; margin: 0 0 12px; font-weight: 800; }
+.welcome .welcome-copy p { color: white; font-size: 12px; line-height: 1.5; margin: 0 auto; }
+.welcome .welcome-copy .thanks { color: white; font-size: 16px; margin: 14px 0; }
 .welcome .welcome-copy .continue {
-  display: inline-block !important;
-  width: auto !important;
-  height: auto !important;
-  background: white !important;
-  color: #74362f !important;
-  opacity: 1 !important;
-  font-size: 14px !important;
-  font-weight: 800 !important;
-  padding: 12px 38px !important;
-  border-radius: 30px !important;
-  box-shadow: 0 5px 14px rgba(60, 30, 20, 0.15) !important;
+  display: inline-block; width: auto; height: auto;
+  background: white; color: var(--brown); opacity: 1;
+  font-size: 14px; font-weight: 800;
+  padding: 12px 38px; border-radius: 30px;
+  box-shadow: 0 5px 14px rgba(60,30,20,.15);
 }
 
-/* Supprime la bande orange du haut sur cette page */
-.screen:has(.welcome) .topbar {
-  display: none !important;
-}
-
-
-/* HARMONISER LA TAILLE DE TOUTES LES PAGES */
-
-html, body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-}
-
-/* Même largeur pour toute l'application */
-.app-shell {
-  width: 100%;
-  max-width: 430px;
-  min-height: 100vh;
-  min-height: 100dvh;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-/* Toutes les pages utilisent le même cadre */
-.screen {
-  width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
-}
-
-/* Couverture */
-.home {
-  width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
-}
-
-.home-card {
-  width: 100%;
-  max-width: 100%;
-  height: 100vh;
-  height: 100dvh;
-}
-
-/* Page 2 */
-.welcome {
-  width: 100%;
-  height: 100vh;
-  height: 100dvh;
-}
-
-/* Menu et pages du guide */
-.menu,
-.section,
-.final {
-  width: 100%;
-  min-height: 100vh;
-  min-height: 100dvh;
-}
-
-/* Évite les débordements */
-img {
-  max-width: 100%;
-}
+/* Menu et autres pages dans le meme cadre */
+.menu, .section, .final { width: 100%; min-height: 100dvh; }
+@media (min-width: 700px) { #app { box-shadow: 0 0 40px rgba(0,0,0,.12); } }
