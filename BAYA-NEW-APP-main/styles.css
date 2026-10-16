@@ -164,3 +164,69 @@
 .screen:has(.welcome) .topbar {
   display: none !important;
 }
+
+
+/* HARMONISER LA TAILLE DE TOUTES LES PAGES */
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+/* Même largeur pour toute l'application */
+.app-shell {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Toutes les pages utilisent le même cadre */
+.screen {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Couverture */
+.home {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.home-card {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Page 2 */
+.welcome {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* Menu et pages du guide */
+.menu,
+.section,
+.final {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Évite les débordements */
+img {
+  max-width: 100%;
+}
