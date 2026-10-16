@@ -47,3 +47,30 @@
   height: 100%;
   z-index: 5;
 }
+
+
+/* Agrandir l'image de la page de bienvenue */
+.welcome {
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.welcome-copy {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 28px 24px 50px;
+  background: transparent;
+}
