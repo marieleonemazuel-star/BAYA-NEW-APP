@@ -1,0 +1,19 @@
+# Projet complet Baya — couverture mise à jour
+
+Ce dossier contient le projet PWA complet fourni dans l'archive d'origine, avec la nouvelle couverture intégrée.
+
+## Fichiers modifiés
+- `assets/cover-page.png` : nouvelle couverture fournie.
+- `app.js` : la page d'accueil utilise `cover-page.png`; les références `home-card.png` de la rubrique « Mes petites habitudes » ont aussi été remplacées.
+- `styles.css` : la couverture est affichée en plein écran, sans ancien texte ni cœur superposé.
+- `index.html` : l'icône du site utilise la nouvelle couverture.
+- `sw.js` : nom du cache augmenté pour forcer le navigateur à télécharger la nouvelle version.
+
+## Déploiement sur GitHub
+1. Décompresse ce ZIP.
+2. Ouvre ton dépôt GitHub `BAYA-APPLICATION`.
+3. Téléverse/remplace les fichiers du projet en conservant l'arborescence : `app.js`, `styles.css`, `index.html`, `sw.js`, et le dossier `assets`.
+4. Vérifie que toutes les images de `assets` sont présentes.
+5. Enregistre les changements (Commit changes) et attends le déploiement GitHub Pages.
+
+Conseil : garde une copie de ton dépôt actuel avant de remplacer les fichiers. Le dossier `assets` contient les photos originales de l'archive; elles sont conservées.
