@@ -1,1 +1,49 @@
 :root{--orange:#df8755;--orange2:#e99b68;--cream:#fff8ef;--brown:#74362f;--ink:#3f2925;--white:#fff;--shadow:0 14px 35px rgba(77,39,31,.18);--radius:24px}*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#f5e6da;color:var(--ink);font-family:Montserrat,system-ui,sans-serif}body{display:flex;justify-content:center}.app-shell{width:100%;min-height:100vh;background:var(--cream);overflow:hidden;position:relative}.screen{min-height:100vh;position:relative;animation:in .35s ease both}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}button{font:inherit;border:0;cursor:pointer}img{display:block;max-width:100%}.paw-bg{background-color:var(--orange);background-image:radial-gradient(circle at 20% 20%,rgba(255,220,194,.18) 0 12px,transparent 13px),radial-gradient(circle at 65% 35%,rgba(255,220,194,.14) 0 10px,transparent 11px),radial-gradient(circle at 30% 75%,rgba(255,220,194,.15) 0 17px,transparent 18px);background-size:100px 100px,140px 130px,180px 170px}.topbar{height:24px;background:var(--orange)}.center{display:flex;align-items:center;justify-content:center}.home{background:#fff8ef;display:flex;align-items:center;justify-content:center;min-height:100vh}.home-card{width:100%;max-width:430px;height:100vh;height:100dvh;background:#fff8ef;box-shadow:none;text-align:center;position:relative;margin:0;overflow:hidden}.home-card img{width:100%;height:100%;object-fit:contain;object-position:center;border:0}.home-card .card-copy{display:none}.name{font-weight:800;letter-spacing:.04em;color:var(--brown);font-size:16px}.subtitle{color:#c8734e;margin-top:4px;font-size:14px}.heart{display:none}.tap{position:absolute;inset:0;background:transparent}.welcome img{width:100%;height:44vh;object-fit:cover;object-position:center top}.welcome-copy{padding:28px 24px 50px;text-align:center;color:white;min-height:56vh}.welcome h1{font-size:21px;line-height:1.1;margin:8px 0 24px;font-weight:800}.welcome p{font-size:15px;line-height:1.6;margin:0 auto;max-width:330px}.thanks{font-family:Nunito,sans-serif;color:var(--brown);font-size:21px;font-weight:800;margin:28px 0}.continue{color:white;font-size:14px;opacity:.95}.menu{background:var(--orange);min-height:100vh;padding-bottom:36px}.menu-hero{height:31vh;min-height:220px;background:url('assets/menu-bg.png') center top/cover no-repeat}.menu-title{color:white;text-align:center;font-size:23px;font-weight:800;padding:18px 24px 8px}.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;padding:14px 18px}.menu-btn{min-height:128px;border-radius:22px;background:rgba(255,248,239,.96);box-shadow:0 7px 18px rgba(84,43,33,.12);padding:14px;color:var(--brown);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font-weight:800}.menu-icon{font-size:37px}.menu-btn small{font-size:12px;opacity:.72}.section{min-height:100vh;background:var(--cream)}.section-header{background:var(--orange);color:white;padding:15px 18px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:2}.back{background:rgba(255,255,255,.2);color:white;border-radius:50%;width:40px;height:40px;font-size:22px}.section-header h1{font-size:19px;margin:0}.section-body{padding-bottom:40px}.hero-photo{width:100%;height:39vh;object-fit:cover}.content{padding:22px 20px}.content h2{color:var(--brown);font-size:22px;margin:0 0 12px}.content p{line-height:1.65;font-size:14px;margin:8px 0}.rule{background:white;border-radius:18px;padding:16px;margin:14px 0;box-shadow:0 7px 18px rgba(77,39,31,.08)}.rule strong{color:var(--brown)}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.gallery img{width:100%;height:180px;object-fit:cover;border-radius:18px}.pill{display:inline-flex;padding:8px 12px;border-radius:999px;background:#f4d6c4;color:var(--brown);font-size:12px;font-weight:800;margin:4px 4px 4px 0}.final{min-height:100vh;background:var(--orange);color:white;text-align:center;padding:18vh 28px;display:flex;flex-direction:column;align-items:center}.final .big-heart{font-size:75px;animation:pulse 1.5s infinite}.final h1{font-size:30px;margin:10px 0}.final p{line-height:1.7;max-width:330px}.restart{margin-top:25px;background:white;color:var(--brown);padding:14px 22px;border-radius:999px;font-weight:800}@keyframes pulse{50%{transform:scale(1.1)}}@media(min-width:700px){.app-shell{max-width:430px;box-shadow:0 0 40px rgba(0,0,0,.12)}.screen{min-height:100dvh}.home-card{width:300px}.menu-grid{gap:16px}.menu-btn{min-height:140px}}
+
+/* Couverture Baya : plein écran */
+.home {
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background: #fff8ef;
+  overflow: hidden;
+}
+
+.home-card {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.home-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: none;
+}
+
+.home-card .card-copy,
+.home-card .heart {
+  display: none;
+}
+
+.home .tap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
