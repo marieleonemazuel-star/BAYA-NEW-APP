@@ -7,7 +7,6 @@ const data={
  friandises:{title:'Les friandises',icon:'🦴',hero:'treat.png',text:`Je suis gourmande. Je ne suis jamais contre une petite friandise !`,items:[`Si j'écoute bien et que je suis sage, tu peux m'en donner une !`,`Je la récupère après m'être assise et avoir donné la patte en bonus.`],gallery:['treat.png']},
  jouets:{title:'Mes jouets',icon:'🎾',hero:'red-bone.png',text:`Mes jouets préférés.`,items:[`🟥 Mon os rouge.`,`🔵 Mon os bleu.`,`🦒 Ma petite girafe.`],gallery:['red-bone.png','blue-rope.png','giraffe.png']},
  calins:{title:'Les câlins',icon:'❤️',hero:'cuddles.png',text:`Baya adore les câlins.`,items:[`Laisse-la venir vers toi.`,`Si elle s’installe contre toi, profite du moment !`,`Elle adore les gratouilles sur le ventre.`],gallery:['cuddles.png']},
-};
 function shell(html,cls=''){return `<div class="screen ${cls}">${html}</div>`}
 function home(){app.innerHTML=shell(`<div class="home" style="min-height:100vh"><div class="home-card"><img src="${A}cover-page.png" alt="Baya"><button class="tap" aria-label="Ouvrir le guide" onclick="welcome()"></button></div></div>`)}
 function welcome(){app.innerHTML=shell(`<div class="topbar"></div><div class="welcome paw-bg"><img src="${A}welcome.png" alt="Baya"><div class="welcome-copy"><h1>VOICI UN PETIT GUIDE POUR<br>BIEN S’OCCUPER DE MOI !</h1><p>Tu viens t’occuper de moi ? Super !<br>Je te montre mes petites habitudes.</p><div class="thanks">Et surtout, MERCI ! ♥</div><button class="continue" onclick="menu()">BAYA</button></div></div>`)}
