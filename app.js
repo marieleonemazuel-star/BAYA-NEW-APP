@@ -71,11 +71,10 @@ const data = {
     title: 'Les câlins',
     icon: '❤️',
     hero: 'cuddles.png',
-    text: `Baya adore les câlins.`,
+    text: `J'adore les câlins.`,
     items: [
-      `Laisse-la venir vers toi.`,
-      `Si elle s’installe contre toi, profite du moment !`,
-      `Elle adore les gratouilles sur le ventre et les oreilles !`
+      `Je viendrais naturellement vers toi pour chercher des câlins. Je suis un vrai pot de colle !`,
+      `J'adore les gratouilles sur le ventre et les oreilles !`
     ],
     gallery: ['cuddles.png']
   }
